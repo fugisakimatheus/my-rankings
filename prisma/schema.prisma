@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  username  String   @unique
+  password  String
+  image     String?
+  ranks     Rank[]
+  matches   Match[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Category {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  ranks     Rank[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("categories")
+}
+
+model Rank {
+  id          String     @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String?
+  thumbnail   String?
+  keysNumber  Int
+  userId      String     @db.ObjectId
+  user        User       @relation(fields: [userId], references: [id])
+  categoryId  String     @db.ObjectId
+  category    Category   @relation(fields: [categoryId], references: [id])
+  rankItems   RankItem[]
+  matches     Match[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@map("ranks")
+}
+
+model RankItem {
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
+  name       String?
+  image      String?
+  videoUrl   String?
+  rankId     String      @db.ObjectId
+  rank       Rank        @relation(fields: [rankId], references: [id])
+  matchItems MatchItem[]
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+
+  @@map("rankItems")
+}
+
+model Match {
+  id         String      @id @default(auto()) @map("_id") @db.ObjectId
+  userId     String?     @db.ObjectId
+  user       User?       @relation(fields: [userId], references: [id])
+  rankId     String      @db.ObjectId
+  rank       Rank        @relation(fields: [rankId], references: [id])
+  matchItems MatchItem[]
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+
+  @@map("matches")
+}
+
+model MatchItem {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  matchId    String   @db.ObjectId
+  match      Match    @relation(fields: [matchId], references: [id])
+  rankItemId String   @db.ObjectId
+  rankItem   RankItem @relation(fields: [rankItemId], references: [id])
+  status     String // enum win, lose
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("matchItems")
+}

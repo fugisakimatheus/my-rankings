@@ -1,0 +1,404 @@
+<svg aria-roledescription="er" viewBox="-5.647146224975586 0 393.0222473144531 964"
+  style="max-width: 393.022px; left: 0px; top: 0px;" xmlns="http://www.w3.org/2000/svg" width="undefined"
+  id="mermaid-svg" height="undefined">
+  <style>
+    #mermaid-svg {
+      font-family: "trebuchet ms", verdana, arial, sans-serif;
+      font-size: 16px;
+      fill: #333;
+    }
+
+    #mermaid-svg .error-icon {
+      fill: #552222;
+    }
+
+    #mermaid-svg .error-text {
+      fill: #552222;
+      stroke: #552222;
+    }
+
+    #mermaid-svg .edge-thickness-normal {
+      stroke-width: 2px;
+    }
+
+    #mermaid-svg .edge-thickness-thick {
+      stroke-width: 3.5px;
+    }
+
+    #mermaid-svg .edge-pattern-solid {
+      stroke-dasharray: 0;
+    }
+
+    #mermaid-svg .edge-pattern-dashed {
+      stroke-dasharray: 3;
+    }
+
+    #mermaid-svg .edge-pattern-dotted {
+      stroke-dasharray: 2;
+    }
+
+    #mermaid-svg .marker {
+      fill: #333333;
+      stroke: #333333;
+    }
+
+    #mermaid-svg .marker.cross {
+      stroke: #333333;
+    }
+
+    #mermaid-svg svg {
+      font-family: "trebuchet ms", verdana, arial, sans-serif;
+      font-size: 16px;
+    }
+
+    #mermaid-svg .entityBox {
+      fill: #ECECFF;
+      stroke: #9370DB;
+    }
+
+    #mermaid-svg .attributeBoxOdd {
+      fill: #ffffff;
+      stroke: #9370DB;
+    }
+
+    #mermaid-svg .attributeBoxEven {
+      fill: #f2f2f2;
+      stroke: #9370DB;
+    }
+
+    #mermaid-svg .relationshipLabelBox {
+      fill: hsl(80, 100%, 96.2745098039%);
+      opacity: 0.7;
+      background-color: hsl(80, 100%, 96.2745098039%);
+    }
+
+    #mermaid-svg .relationshipLabelBox rect {
+      opacity: 0.5;
+    }
+
+    #mermaid-svg .relationshipLine {
+      stroke: #333333;
+    }
+
+    #mermaid-svg .entityTitleText {
+      text-anchor: middle;
+      font-size: 18px;
+      fill: #333;
+    }
+
+    #mermaid-svg :root {
+      --mermaid-font-family: "trebuchet ms", verdana, arial, sans-serif;
+    }
+  </style>
+  <g></g>
+  <defs>
+    <marker orient="auto" markerHeight="18" markerWidth="18" refY="9" refX="0" id="ONLY_ONE_START">
+      <path d="M9,0 L9,18 M15,0 L15,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="18" markerWidth="18" refY="9" refX="18" id="ONLY_ONE_END">
+      <path d="M3,0 L3,18 M9,0 L9,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="18" markerWidth="30" refY="9" refX="0" id="ZERO_OR_ONE_START">
+      <circle r="6" cy="9" cx="21" fill="white" stroke="gray"></circle>
+      <path d="M9,0 L9,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="18" markerWidth="30" refY="9" refX="30" id="ZERO_OR_ONE_END">
+      <circle r="6" cy="9" cx="9" fill="white" stroke="gray"></circle>
+      <path d="M21,0 L21,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="36" markerWidth="45" refY="18" refX="18" id="ONE_OR_MORE_START">
+      <path d="M0,18 Q 18,0 36,18 Q 18,36 0,18 M42,9 L42,27" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="36" markerWidth="45" refY="18" refX="27" id="ONE_OR_MORE_END">
+      <path d="M3,9 L3,27 M9,18 Q27,0 45,18 Q27,36 9,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="36" markerWidth="57" refY="18" refX="18" id="ZERO_OR_MORE_START">
+      <circle r="6" cy="18" cx="48" fill="white" stroke="gray"></circle>
+      <path d="M0,18 Q18,0 36,18 Q18,36 0,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <defs>
+    <marker orient="auto" markerHeight="36" markerWidth="57" refY="18" refX="39" id="ZERO_OR_MORE_END">
+      <circle r="6" cy="18" cx="9" fill="white" stroke="gray"></circle>
+      <path d="M21,18 Q39,0 57,18 Q39,36 21,18" fill="none" stroke="gray"></path>
+    </marker>
+  </defs>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ONLY_ONE_END)"
+    d="M201.73027801513672,655.5807611725298L194.06405639648438,665.6506343104415C186.39783477783203,675.7205074483533,171.06539154052734,695.8602537241767,158.60829025378328,714.2634601954218C146.15118896703925,732.6666666666666,136.56942963085586,749.3333333333334,131.77854996276415,757.6666666666666L126.98767029467245,766"
+    class="er relationshipLine"></path>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ONLY_ONE_END)"
+    d="M293.5684122318844,666L296.56601415034964,674.3333333333334C299.56361606881484,682.6666666666666,305.55881990574534,699.3333333333334,308.55642182421053,721.5C311.5540237426758,743.6666666666666,311.5540237426758,771.3333333333334,311.5540237426758,785.1666666666666L311.5540237426758,799"
+    class="er relationshipLine"></path>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ONLY_ONE_END)"
+    d="M311.5540237426758,388L311.5540237426758,396.3333333333333C311.5540237426758,404.6666666666667,311.5540237426758,421.3333333333333,308.55642182421053,438C305.55881990574534,454.6666666666667,299.56361606881484,471.3333333333333,296.56601415034964,479.6666666666667L293.5684122318844,488"
+    class="er relationshipLine"></path>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ZERO_OR_ONE_END)"
+    d="M58.242950439453125,355L52.83930460611979,368.8333333333333C47.43565877278646,382.6666666666667,36.62836710611979,410.3333333333333,31.224721272786457,447.3333333333333C25.821075439453125,484.3333333333333,25.821075439453125,530.6666666666666,25.821075439453125,577C25.821075439453125,623.3333333333334,25.821075439453125,669.6666666666666,28.81867735791835,701.1666666666666C31.81627927638358,732.6666666666666,37.81148311331403,749.3333333333334,40.80908503177926,757.6666666666666L43.80668695024449,766"
+    class="er relationshipLine"></path>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ONLY_ONE_END)"
+    d="M103.9150932431221,355L112.55140241980553,368.8333333333333C121.18771159648895,382.6666666666667,138.4603299498558,410.3333333333333,154.76286074519157,434.23653980457834C171.06539154052734,458.13974627582337,186.39783477783203,478.2794925516468,194.06405639648438,488.34936568955845L201.73027801513672,498.41923882747017"
+    class="er relationshipLine"></path>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ONLY_ONE_END)"
+    d="M125.82107543945312,131.9154589197833L117.4877421061198,140.26288243315275C109.15440877278645,148.6103059465222,92.4877421061198,165.3051529732611,84.15440877278645,187.4859098199639C75.82107543945312,209.66666666666666,75.82107543945312,237.33333333333334,75.82107543945312,251.16666666666666L75.82107543945312,265"
+    class="er relationshipLine"></path>
+  <path style="stroke: gray; fill: none;" marker-start="url(#ZERO_OR_MORE_START)" marker-end="url(#ONLY_ONE_END)"
+    d="M237.46322631835938,121.54652216265757L249.81169255574545,131.62210180221464C262.16015879313153,141.69768144177172,286.8570912679036,161.84884072088585,299.20555750528973,180.25775369377627C311.5540237426758,198.66666666666666,311.5540237426758,215.33333333333334,311.5540237426758,223.66666666666666L311.5540237426758,232"
+    class="er relationshipLine"></path>
+  <g transform="translate(20,766 )" id="entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3">
+    <rect height="178" width="111.64215087890625" y="0" x="0" class="er entityBox"></rect><text
+      style="dominant-baseline: middle; text-anchor: middle; font-size: 12px;"
+      transform="translate(55.821075439453125,12)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3" class="er entityLabel">User</text>
+    <rect height="22" width="54.04840087890625" y="24" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,35)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-1-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="24" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,35)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-1-name" class="er entityLabel">id</text>
+    <rect height="22" width="54.04840087890625" y="46" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,57)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-2-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="46" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,57)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-2-name" class="er entityLabel">email</text>
+    <rect height="22" width="54.04840087890625" y="68" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,79)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-3-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="68" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,79)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-3-name" class="er entityLabel">username</text>
+    <rect height="22" width="54.04840087890625" y="90" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,101)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-4-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="90" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,101)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-4-name" class="er entityLabel">password</text>
+    <rect height="22" width="54.04840087890625" y="112" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,123)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-5-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="112" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,123)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-5-name" class="er entityLabel">image</text>
+    <rect height="22" width="54.04840087890625" y="134" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,145)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-6-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="134" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,145)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-6-name" class="er entityLabel">createdAt</text>
+    <rect height="22" width="54.04840087890625" y="156" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,167)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-7-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="156" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,167)" y="0" x="0"
+      id="text-entity-User-a406ccc9-c2dd-4662-9b2e-f838451efff3-attr-7-name" class="er entityLabel">updatedAt</text>
+  </g>
+  <g transform="translate(255.73294830322266,799 )" id="entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892">
+    <rect height="112" width="111.64215087890625" y="0" x="0" class="er entityBox"></rect><text
+      style="dominant-baseline: middle; text-anchor: middle; font-size: 12px;"
+      transform="translate(55.821075439453125,12)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892" class="er entityLabel">Category</text>
+    <rect height="22" width="54.04840087890625" y="24" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,35)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-1-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="24" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,35)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-1-name" class="er entityLabel">id</text>
+    <rect height="22" width="54.04840087890625" y="46" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,57)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-2-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="46" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,57)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-2-name" class="er entityLabel">name</text>
+    <rect height="22" width="54.04840087890625" y="68" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,79)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-3-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="68" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,79)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-3-name" class="er entityLabel">createdAt</text>
+    <rect height="22" width="54.04840087890625" y="90" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,101)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-4-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="90" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,101)" y="0" x="0"
+      id="text-entity-Category-8e0f3ff5-0942-4536-b030-5d5e4683f892-attr-4-name" class="er entityLabel">updatedAt</text>
+  </g>
+  <g transform="translate(201.73027801513672,488 )" id="entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953">
+    <rect height="178" width="119.64749145507812" y="0" x="0" class="er entityBox"></rect><text
+      style="dominant-baseline: middle; text-anchor: middle; font-size: 12px;"
+      transform="translate(59.82374572753906,12)" y="0" x="0" id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953"
+      class="er entityLabel">Rank</text>
+    <rect height="22" width="54.04840087890625" y="24" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,35)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-1-type" class="er entityLabel">String</text>
+    <rect height="22" width="65.59909057617188" y="24" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,35)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-1-name" class="er entityLabel">id</text>
+    <rect height="22" width="54.04840087890625" y="46" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,57)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-2-type" class="er entityLabel">String</text>
+    <rect height="22" width="65.59909057617188" y="46" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,57)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-2-name" class="er entityLabel">title</text>
+    <rect height="22" width="54.04840087890625" y="68" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,79)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-3-type" class="er entityLabel">String</text>
+    <rect height="22" width="65.59909057617188" y="68" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,79)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-3-name" class="er entityLabel">description</text>
+    <rect height="22" width="54.04840087890625" y="90" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,101)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-4-type" class="er entityLabel">String</text>
+    <rect height="22" width="65.59909057617188" y="90" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,101)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-4-name" class="er entityLabel">thumbnail</text>
+    <rect height="22" width="54.04840087890625" y="112" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,123)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-5-type" class="er entityLabel">Int</text>
+    <rect height="22" width="65.59909057617188" y="112" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,123)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-5-name" class="er entityLabel">keysNumber</text>
+    <rect height="22" width="54.04840087890625" y="134" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,145)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-6-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="65.59909057617188" y="134" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,145)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-6-name" class="er entityLabel">createdAt</text>
+    <rect height="22" width="54.04840087890625" y="156" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,167)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-7-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="65.59909057617188" y="156" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,167)" y="0" x="0"
+      id="text-entity-Rank-583a9d7e-8f3e-4098-928c-c507958b9953-attr-7-name" class="er entityLabel">updatedAt</text>
+  </g>
+  <g transform="translate(255.73294830322266,232 )" id="entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0">
+    <rect height="156" width="111.64215087890625" y="0" x="0" class="er entityBox"></rect><text
+      style="dominant-baseline: middle; text-anchor: middle; font-size: 12px;"
+      transform="translate(55.821075439453125,12)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0" class="er entityLabel">RankItem</text>
+    <rect height="22" width="54.04840087890625" y="24" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,35)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-1-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="24" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,35)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-1-name" class="er entityLabel">id</text>
+    <rect height="22" width="54.04840087890625" y="46" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,57)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-2-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="46" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,57)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-2-name" class="er entityLabel">name</text>
+    <rect height="22" width="54.04840087890625" y="68" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,79)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-3-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="68" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,79)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-3-name" class="er entityLabel">image</text>
+    <rect height="22" width="54.04840087890625" y="90" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,101)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-4-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="90" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,101)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-4-name" class="er entityLabel">videoUrl</text>
+    <rect height="22" width="54.04840087890625" y="112" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,123)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-5-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="112" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,123)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-5-name" class="er entityLabel">createdAt</text>
+    <rect height="22" width="54.04840087890625" y="134" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,145)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-6-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="134" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,145)" y="0" x="0"
+      id="text-entity-RankItem-0bd94e8d-ef16-41e6-98eb-305cb75283f0-attr-6-name" class="er entityLabel">updatedAt</text>
+  </g>
+  <g transform="translate(20,265 )" id="entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e">
+    <rect height="90" width="111.64215087890625" y="0" x="0" class="er entityBox"></rect><text
+      style="dominant-baseline: middle; text-anchor: middle; font-size: 12px;"
+      transform="translate(55.821075439453125,12)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e" class="er entityLabel">Match</text>
+    <rect height="22" width="54.04840087890625" y="24" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,35)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e-attr-1-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="24" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,35)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e-attr-1-name" class="er entityLabel">id</text>
+    <rect height="22" width="54.04840087890625" y="46" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,57)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e-attr-2-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="46" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,57)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e-attr-2-name" class="er entityLabel">createdAt</text>
+    <rect height="22" width="54.04840087890625" y="68" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,79)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e-attr-3-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="68" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,79)" y="0" x="0"
+      id="text-entity-Match-b9df653d-950a-4e6d-ab1c-8bac7046d41e-attr-3-name" class="er entityLabel">updatedAt</text>
+  </g>
+  <g transform="translate(125.82107543945312,20 )" id="entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad">
+    <rect height="112" width="111.64215087890625" y="0" x="0" class="er entityBox"></rect><text
+      style="dominant-baseline: middle; text-anchor: middle; font-size: 12px;"
+      transform="translate(55.821075439453125,12)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad" class="er entityLabel">MatchItem</text>
+    <rect height="22" width="54.04840087890625" y="24" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,35)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-1-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="24" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,35)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-1-name" class="er entityLabel">id</text>
+    <rect height="22" width="54.04840087890625" y="46" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,57)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-2-type" class="er entityLabel">String</text>
+    <rect height="22" width="57.59375" y="46" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,57)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-2-name" class="er entityLabel">status</text>
+    <rect height="22" width="54.04840087890625" y="68" x="0" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,79)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-3-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="68" x="54.04840087890625" class="er attributeBoxOdd"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,79)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-3-name"
+      class="er entityLabel">createdAt</text>
+    <rect height="22" width="54.04840087890625" y="90" x="0" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(5,101)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-4-type" class="er entityLabel">DateTime</text>
+    <rect height="22" width="57.59375" y="90" x="54.04840087890625" class="er attributeBoxEven"></rect><text
+      style="dominant-baseline: middle; font-size: 10.2px;" transform="translate(59.04840087890625,101)" y="0" x="0"
+      id="text-entity-MatchItem-321852ae-2128-4b59-a431-ddeadf1badad-attr-4-name"
+      class="er entityLabel">updatedAt</text>
+  </g>
+  <rect height="14" width="22.958984375" y="702.2382202148438" x="150.57061767578125" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="709.2382202148438"
+    x="162.05010986328125" id="rel1" class="er relationshipLabel">user</text>
+  <rect height="14" width="46.67578125" y="724.433349609375" x="286.3424377441406" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="731.433349609375"
+    x="309.6803283691406" id="rel2" class="er relationshipLabel">category</text>
+  <rect height="14" width="24.525390625" y="432.03277587890625" x="296.1037292480469" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="439.03277587890625"
+    x="308.3664245605469" id="rel3" class="er relationshipLabel">rank</text>
+  <rect height="14" width="22.958984375" y="552.3358154296875" x="14.352853775024414" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="559.3358154296875"
+    x="25.832345962524414" id="rel4" class="er relationshipLabel">user</text>
+  <rect height="14" width="24.525390625" y="421.18536376953125" x="138.40594482421875" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="428.18536376953125"
+    x="150.66864013671875" id="rel5" class="er relationshipLabel">rank</text>
+  <rect height="14" width="33.53125" y="184.42323303222656" x="66.01274871826172" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="191.42323303222656"
+    x="82.77837371826172" id="rel6" class="er relationshipLabel">match</text>
+  <rect height="14" width="48.220703125" y="160.99032592773438" x="265.423583984375" class="er relationshipLabelBox">
+  </rect><text style="text-anchor: middle; dominant-baseline: middle; font-size: 12px;" y="167.99032592773438"
+    x="289.533935546875" id="rel7" class="er relationshipLabel">rankItem</text>
+</svg>
