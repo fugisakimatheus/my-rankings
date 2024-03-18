@@ -1,6 +1,6 @@
 import { User } from '@/shared/models'
 import { prisma } from '@/shared/prisma-client'
-import { parseResponse } from '@/shared/server/response'
+import { parseResponse } from '@/server/response'
 import { hash } from 'bcrypt'
 import { StatusCodes } from 'http-status-codes'
 import { NextRequest } from 'next/server'

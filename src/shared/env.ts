@@ -7,8 +7,15 @@ const envSchema = z
     DB_USER: z.string(),
     DB_PASSWORD: z.string(),
     DATABASE_URL: z.string(),
-    // Token
-    TOKEN_SECRET: z.string(),
+    // JWT
+    JWT_SECRET: z.string(),
+    JWT_EXPIRES_IN: z.string(),
+    // Mail
+    MAIL_USER: z.string(),
+    MAIL_PASSWORD: z.string(),
+    MAIL_HOST: z.string(),
+    MAIL_PORT: z.coerce.number(),
+    MAIL_SECURE: z.coerce.boolean(),
   })
   .refine(({ DB_NAME, DB_PASSWORD, DB_USER, DATABASE_URL }) => {
     if (DATABASE_URL.includes(`${DB_USER}:${DB_PASSWORD}@${DB_NAME}`)) {

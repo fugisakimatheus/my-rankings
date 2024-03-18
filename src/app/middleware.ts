@@ -1,5 +1,5 @@
 import { env } from '@/shared/env'
-import { parseResponse } from '@/shared/server/response'
+import { parseResponse } from '@/server/response'
 import { StatusCodes } from 'http-status-codes'
 import jwt from 'jsonwebtoken'
 import { NextRequest, NextResponse } from 'next/server'
@@ -11,7 +11,7 @@ export function middleware(request: NextRequest) {
   let response: NextResponse
 
   try {
-    jwt.verify(token, env.TOKEN_SECRET)
+    jwt.verify(token, env.JWT_SECRET)
     response = NextResponse.next()
   } catch (error) {
     response = parseResponse(StatusCodes.UNAUTHORIZED, { message: 'Invalid token' })

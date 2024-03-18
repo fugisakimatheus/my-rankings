@@ -1,6 +1,6 @@
 import { env } from '@/shared/env'
 import { prisma } from '@/shared/prisma-client'
-import { parseResponse } from '@/shared/server/response'
+import { parseResponse } from '@/server/response'
 import { compare } from 'bcrypt'
 import { StatusCodes } from 'http-status-codes'
 import jwt from 'jsonwebtoken'
@@ -23,7 +23,9 @@ export async function POST(request: NextRequest) {
     return parseResponse(StatusCodes.UNAUTHORIZED, { message: 'Invalid email or password' })
   }
 
-  const accessToken = jwt.sign({ userId: user.id }, env.TOKEN_SECRET, { expiresIn: '2d' })
+  const accessToken = jwt.sign({ userId: user.id }, env.JWT_SECRET, {
+    expiresIn: env.JWT_EXPIRES_IN,
+  })
 
   return parseResponse(StatusCodes.OK, { accessToken })
 }
