@@ -13,9 +13,6 @@ const envSchema = z
     // Mail
     MAIL_USER: z.string(),
     MAIL_PASSWORD: z.string(),
-    MAIL_HOST: z.string(),
-    MAIL_PORT: z.coerce.number(),
-    MAIL_SECURE: z.coerce.boolean(),
   })
   .refine(({ DB_NAME, DB_PASSWORD, DB_USER, DATABASE_URL }) => {
     if (DATABASE_URL.includes(`${DB_USER}:${DB_PASSWORD}@${DB_NAME}`)) {

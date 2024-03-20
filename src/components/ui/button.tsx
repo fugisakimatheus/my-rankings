@@ -5,35 +5,38 @@ import * as React from 'react'
 import { cn } from '@/lib/utils'
 import { Loading } from './loading'
 
-const buttonVariants = cva('btn', {
-  variants: {
-    colorScheme: {
-      primary: 'btn-primary',
-      secondary: 'btn-secondary',
-      accent: 'btn-accent',
-      neutral: 'btn-neutral',
+const buttonVariants = cva(
+  'btn data-[loading=true]:opacity-50 data-[loading=true]:pointer-events-none',
+  {
+    variants: {
+      colorScheme: {
+        primary: 'btn-primary',
+        secondary: 'btn-secondary',
+        accent: 'btn-accent',
+        neutral: 'btn-neutral',
+      },
+      variant: {
+        outline: 'btn-outline',
+        link: 'btn-link',
+        ghost: 'btn-ghost',
+      },
+      size: {
+        xs: 'btn-xs',
+        sm: 'btn-sm',
+        md: 'btn-md',
+        lg: 'btn-lg',
+      },
+      format: {
+        block: 'btn-block',
+        circle: 'btn-circle',
+        square: 'btn-square',
+      },
     },
-    variant: {
-      outline: 'btn-outline',
-      link: 'btn-link',
-      ghost: 'btn-ghost',
-    },
-    size: {
-      xs: 'btn-xs',
-      sm: 'btn-sm',
-      md: 'btn-md',
-      lg: 'btn-lg',
-    },
-    format: {
-      block: 'btn-block',
-      circle: 'btn-circle',
-      square: 'btn-square',
+    defaultVariants: {
+      colorScheme: 'primary',
     },
   },
-  defaultVariants: {
-    colorScheme: 'primary',
-  },
-})
+)
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -50,6 +53,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       format,
       colorScheme,
       className,
+      disabled,
       asChild = false,
       isLoading = false,
       children,
@@ -62,6 +66,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <Comp
         className={cn(buttonVariants({ variant, size, format, colorScheme, className }))}
         ref={ref}
+        data-loading={isLoading}
         {...props}
       >
         <>

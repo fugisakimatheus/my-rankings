@@ -20,12 +20,12 @@ export async function POST(request: NextRequest) {
 
   const token = crypto.randomBytes(32).toString('hex')
 
-  mailTransporter.sendMail({
+  await mailTransporter.sendMail({
     from: `"My Rankings" <${env.MAIL_USER}>`,
     to: email,
     subject: 'Reset Password',
     html: `
-      <p>Click <a href="http://localhost:3000/reset-password/${token}">here</a> to reset your password</p>
+      <p>Click <a href="http://localhost:3000/change-password/${token}">here</a> to reset your password</p>
     `,
   })
 
